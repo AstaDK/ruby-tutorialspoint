@@ -44,6 +44,13 @@ class Student
         @@no_of_subjects += 1
         get_info_studen()
     end
+
+    # Pseudo variables
+    def get_pseudo
+        puts "this file: #{__FILE__}"
+        puts "this line: #{__LINE__}"
+        puts "this self: #{self}"
+    end
 end
 
 student1 = Student.new(1, "Will")
@@ -51,3 +58,5 @@ student1.increase_subject()
 
 student2 = Student.new(2, "Michael")
 student2.increase_subject()
+
+student1.get_pseudo()
