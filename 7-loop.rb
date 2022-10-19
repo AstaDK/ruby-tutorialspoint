@@ -40,3 +40,5 @@ for i in 1..7
     end
     puts "Value of loop have next #{i}"
 end
+
+#redo and retry
